@@ -1,6 +1,7 @@
 # Secure Authentication System
 
 A secure and scalable authentication system built with **Node.js**, **Express**, **Prisma**, and **React**. This project provides enterprise-grade authentication features, including **JWT-based authentication**, **login activity tracking**, and a modern, responsive frontend interface.
+![Intro](./intro.gif)
 
 ---
 
