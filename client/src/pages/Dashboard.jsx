@@ -140,7 +140,9 @@ const Dashboard = () => {
             ipAddress: lastLogin.ip_address || 'Not detected',
             device: `${getBrowser(lastLogin.user_agent)} / ${getOS(lastLogin.user_agent)}`,
             browser: getBrowser(lastLogin.user_agent),
-            os: getOS(lastLogin.user_agent)
+            os: getOS(lastLogin.user_agent),
+            status: true,
+            type: 'login'
           }] : []),
           ...failedLogins.map(login => ({
             ...login,
@@ -148,7 +150,9 @@ const Dashboard = () => {
             ipAddress: login.ip_address || 'Not detected',
             device: `${getBrowser(login.user_agent)} / ${getOS(login.user_agent)}`,
             browser: getBrowser(login.user_agent),
-            os: getOS(login.user_agent)
+            os: getOS(login.user_agent),
+            status: false,
+            type: 'login'
           }))
         ].sort((a, b) => {
           const dateA = safeParseDate(a.timestamp);
