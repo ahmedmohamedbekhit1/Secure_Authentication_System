@@ -85,6 +85,6 @@ The frontend is built with **React** and styled using **CSS modules** and **Fram
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/secure-auth-system.git
+   git clone https://github.com/ahmedmohamedbekhit1/Secure_Authentication_System.git
    cd secure-auth-system
    ```
